@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 // import img from "/src/assets/images/img3.jpg";
-import img from "/src/assets/images/bgcover.jpg";
+import img from "/src/assets/images/bgimg.webp";
+// import img2 from "/src/assets/images/bgimg2.jpg";
+// import img3 from "src/assets/images/bgimg3.avif";
+// import img4 from "/src/assets/images/bgcover.jpg";
 // import bgimg from "../assets/images/bgcover.jpg";
 import {
   AiFillInstagram,
@@ -12,10 +15,14 @@ import {
 const Body = () => {
   const tech = ["web developer", "web designer", "youtuber", "ui/ux designer"];
   const images = [
-    "https://images.unsplash.com/photo-1615494937408-7f4e41bf45d9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvZGluZyUyMGJnJTIwaW1hZ2UlMjBmb3IlMjB3ZWJzaXRlfGVufDB8fDB8fHww",
-    "https://plus.unsplash.com/premium_photo-1673696508153-01cf0dbcf60a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNvbXB1dGVyJTIwd29ya2luZyUyMCUyMHN0dWRpb3xlbnwwfHwwfHx8MA%3D%3D",
-    // "https://images.unsplash.com/photo-1669023414162-5bb06bbff0ec?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://samaritan-technologies.com/static/assets/images/Top-Background.webp",
+    img,
+    // img2,
+    // img3,
+    // img4,
+    // "https://images.unsplash.com/photo-1615494937408-7f4e41bf45d9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvZGluZyUyMGJnJTIwaW1hZ2UlMjBmb3IlMjB3ZWJzaXRlfGVufDB8fDB8fHww",
+    // "https://plus.unsplash.com/premium_photo-1673696508153-01cf0dbcf60a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNvbXB1dGVyJTIwd29ya2luZyUyMCUyMHN0dWRpb3xlbnwwfHwwfHx8MA%3D%3D",
+    // // "https://images.unsplash.com/photo-1669023414162-5bb06bbff0ec?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    // "https://samaritan-technologies.com/static/assets/images/Top-Background.webp",
   ];
 
   const [count, setCount] = useState(0);
@@ -32,7 +39,7 @@ const Body = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCount((prevCount) => (prevCount + 1) % tech.length); // Loop back to 0
-    }, 4000); // Change every 4 seconds
+    }, 3000); // Change every 4 seconds
 
     return () => clearInterval(intervalId); // Clean up
   }, [tech.length]);
@@ -41,10 +48,10 @@ const Body = () => {
     // <div
     // className={`min-h-screen pt-14 w-full bg-${[images[index]]} bg-[url('https://samaritan-technologies.com/static/assets/images/Top-Background.webp')]  bg-cover flex justify-center items-center`}>
     <div
-      className="min-h-screen pt-14 w-full bg-black bg-opacity-50 bg-cover flex justify-center items-center"
+      className="min-h-screen pt-14 w-full bg-black bg-opacity-70 bg-cover flex justify-center items-center overflow-x-hidden"
       style={{ backgroundImage: `url(${images[index]})` }}
     >
-      <div className="lg:flex items-center gap-80 px-4 ">
+      <div className="lg:flex items-center px-4 ">
         {/* Text Section */}
         <div className=" text-white flex flex-col justify-start gap-4 text-center lg:text-left md:mt-9 lg:mt-0">
           <h1 className="text-4xl">Hello, It's me</h1>
