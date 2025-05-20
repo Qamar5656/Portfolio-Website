@@ -7,11 +7,4 @@ export default defineConfig({
   css: {
     postcss: './postcss.config.js',  // Make sure PostCSS config is being used
   },
-build: {
-    rollupOptions: {
-      external: [
-        './app.css',
-      ],
-    },
-  },
 })
