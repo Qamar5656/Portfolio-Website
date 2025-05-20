@@ -7,6 +7,7 @@ import Resume from "./components/Homepage/Resume";
 import Projects from "./components/Homepage/Projects";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "./app.css";
 import ContactForm from "./components/forms/ContactForm";
 import { BrowserRouter, Routes } from "react-router-dom";
 import ScrollProgressBar from "./components/models/ScrollProgressBar";
