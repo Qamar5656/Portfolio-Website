@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 // import img from "/src/assets/images/img3.jpg";
 import img from "/src/assets/images/bgimg.webp";
+import img2 from "/src/assets/images/gif_for_body.gif";
 // import img2 from "/src/assets/images/bgimg2.jpg";
 // import img3 from "src/assets/images/bgimg3.avif";
 // import img4 from "/src/assets/images/bgcover.jpg";
@@ -48,10 +49,10 @@ const Body = () => {
     // <div
     // className={`min-h-screen pt-14 w-full bg-${[images[index]]} bg-[url('https://samaritan-technologies.com/static/assets/images/Top-Background.webp')]  bg-cover flex justify-center items-center`}>
     <div
-      className="min-h-screen pt-14 w-full bg-black bg-opacity-70 bg-cover flex justify-center items-center overflow-x-hidden"
+      className="min-h-screen pt-14 w-full bg-black bg-opacity-70 bg-cover flex justify-around gap-9 items-center overflow-x-hidden"
       style={{ backgroundImage: `url(${images[index]})` }}
     >
-      <div className="lg:flex items-center px-4 ">
+      <div className="flex flex-col md:flex-row items-center px-4 gap-5 justify-between">
         {/* Text Section */}
         <div className=" text-white flex flex-col justify-start gap-4 text-center lg:text-left md:mt-9 lg:mt-0">
           <h1 className="text-4xl">Hello, It's me</h1>
@@ -60,7 +61,7 @@ const Body = () => {
           </h1>
           <h1 className="text-3xl">
             I am a{" "}
-            <span className=" text-green-400  my-2 transition-transform duration-500 ease-in-out">
+            <span className=" text-yellow-400 font-bold  my-2 transition-transform duration-500 ease-in-out">
               {tech[count]}
             </span>
           </h1>
@@ -115,13 +116,15 @@ const Body = () => {
           </div>
         </div>
 
-        {/* Profile Image */}
-        {/* <img
-          src={images[index]}
-          alt="Profile"
-          className="rounded-xl h-64 w-80  sm:h-80 sm:w-80 lg:h-96 lg:w-96"
-          // className="z-0 rounded-full border-4  border-y-green-400 border-x-yellow-400 h-64 w-64 sm:h-80 sm:w-80 lg:h-96 lg:w-96"
-        /> */}
+        <div>
+          {/* Profile Image */}
+          <img
+            src={img2}
+            alt="Profile"
+            className="rounded-xl h-64 w-80  sm:h-80 sm:w-80 lg:h-96 lg:w-96"
+            // className="z-0 rounded-full border-4  border-y-green-400 border-x-yellow-400 h-64 w-64 sm:h-80 sm:w-80 lg:h-96 lg:w-96"
+          />
+        </div>
       </div>
     </div>
   );

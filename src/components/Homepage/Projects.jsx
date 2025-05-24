@@ -18,13 +18,15 @@ const Projects = ({ img, heading, text }) => {
             description="This is the text part of the project"
           />
         </a>
-        <Card
-          img={
-            "https://api.microlink.io?url=https://qamarfyp.netlify.app&screenshot=true&embed=screenshot.url"
-          }
-          title="This is the heading of the card"
-          description="This is the text part of the project"
-        />
+        <a href="https://qamarfyp.netlify.app" target="_blank">
+          <Card
+            img={
+              "https://api.microlink.io?url=https://qamarfyp.netlify.app&screenshot=true&embed=screenshot.url"
+            }
+            title="Dietry Planner"
+            description="This is the text part of the project"
+          />
+        </a>
         <Card
           img={img}
           title="This is the heading of the card"
