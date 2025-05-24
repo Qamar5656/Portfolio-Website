@@ -23,14 +23,14 @@ const ContactForm = ({ onClose }) => {
   };
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center pt-20 z-20">
-      <div className="bg-white p-4 border rounded-xl px-14 mt-5">
+      <div className="bg-white bg-opacity-30 p-4 border rounded-xl px-14 mt-5">
         <div className="flex justify-between">
           <h1 className="font-bold text-2xl py-3">Contact Us Now</h1>
           <p className="py-3">
             <AiOutlineClose
               onClick={onClose}
               size={28}
-              className="cursor-pointer"
+              className="cursor-pointer text-black"
             />
           </p>
         </div>
