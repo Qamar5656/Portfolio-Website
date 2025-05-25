@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-image {
-  background-image: url("https://images.unsplash.com/photo-1669023414162-5bb06bbff0ec?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-}
-* {
-  /* outline: 5px solid red; */
-  /* background-color: aqua; */
-}
-
 /* Global styles */
 html,
 body {
@@ -26,10 +18,60 @@ body {
   box-sizing: border-box;
 }
 
-/* .container {
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-} */
+@layer utilities {
+  /* === Backgrounds === */
+  .bg-primary {
+    @apply bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 shadow-md transition-all duration-300;
+  }
+
+  .bg-light {
+    @apply bg-white;
+  }
+
+  .bg-dark {
+    @apply bg-black;
+  }
+
+  .bg-secondary {
+    @apply bg-gray-600;
+  }
+
+  /* === Text Colors === */
+  .text-light {
+    @apply text-white;
+  }
+
+  .text-secondary {
+    @apply text-yellow-400;
+  }
+
+  .text-light {
+    @apply text-white;
+  }
+
+  .text-dark {
+    @apply text-black;
+  }
+
+  /* === Buttons === */
+  .btn-primary {
+    @apply bg-green-600 text-white font-semibold px-4 py-2 rounded hover:bg-green-700 transition duration-300;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-600 text-white font-semibold px-4 py-2 rounded hover:bg-gray-700 transition duration-300;
+  }
+}
+/* globals.css or your main stylesheet */
+
+.nav-link {
+  @apply cursor-pointer text-white hover:text-yellow-300 hover:shadow-[0_0_15px_5px_rgba(250,204,21,0.6)] border-none rounded-full transition duration-300 px-2;
+}
+
+.nav-link-active {
+  @apply text-yellow-400 shadow-[0_0_15px_5px_rgba(250,204,21,0.6)] border-none rounded-full transition duration-300;
+}
+
+.text-highlight {
+  @apply text-yellow-400;
+}
