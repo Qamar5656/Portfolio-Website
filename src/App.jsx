@@ -25,17 +25,17 @@ const App = () => {
       <div id="home">
         <Body />
       </div>
-      <div id="about" data-aos="fade-in">
+      <div id="about" data-aos="zoom-out">
         <About />
       </div>
       <div id="skills" data-aos="fade-out">
         <Skills />
       </div>
+      <div id="projects" data-aos="zoom-in">
+        <Projects />
+      </div>
       <div id="resume" data-aos="zoom-out">
         <Resume />
-      </div>
-      <div id="projects">
-        <Projects />
       </div>
       <div id="footer">
         <Footer />

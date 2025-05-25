@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link as ScrollLink } from "react-scroll";
 import ContactForm from "/src/components/forms/ContactForm.jsx";
+import { BrowserRouter, Routes } from "react-router-dom";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -23,7 +24,7 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const NavItems = ["home", "about", "skills", "resume", "projects"];
+  const NavItems = ["home", "about", "skills", "projects", "resume"];
 
   function handleListItem() {
     setIndex((prev) => prev + 1);
@@ -106,6 +107,12 @@ const Navbar = () => {
       </div>
 
       {formvisible && <ContactForm onClose={closeFormDisplay} />}
+
+      {/* Routing Methods to switch between pages  */}
+      {/* <BrowserRouter>
+      <Routes>
+      </Routes>
+      </BrowserRouter> */}
     </>
   );
 };
