@@ -11,6 +11,8 @@ import "./app.css";
 import ContactForm from "./components/forms/ContactForm";
 import { BrowserRouter, Routes } from "react-router-dom";
 import ScrollProgressBar from "./components/models/ScrollProgressBar";
+import SignIn from "./components/forms/SignIn";
+import Footer from "./components/Homepage/Footer";
 
 const App = () => {
   useEffect(() => {
@@ -20,7 +22,7 @@ const App = () => {
     <>
       <ScrollProgressBar />
       <Navbar />
-      <div id="body">
+      <div id="home">
         <Body />
       </div>
       <div id="about" data-aos="zoom-out">
@@ -29,11 +31,14 @@ const App = () => {
       <div id="skills" data-aos="fade-out">
         <Skills />
       </div>
+      <div id="projects" data-aos="zoom-in">
+        <Projects />
+      </div>
       <div id="resume" data-aos="zoom-out">
         <Resume />
       </div>
-      <div id="projects">
-        <Projects />
+      <div id="footer">
+        <Footer />
       </div>
     </>
   );

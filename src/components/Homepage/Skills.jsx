@@ -1,109 +1,50 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import {
+  FaBootstrap,
+  FaCss3Alt,
+  FaGithub,
+  FaGitSquare,
+  FaHtml5,
+  FaPython,
+  FaReact,
+} from "react-icons/fa";
+import { SiNodedotjs } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io";
+import { RiTailwindCssFill, RiVuejsFill } from "react-icons/ri";
+import { SiMysql } from "react-icons/si";
+import SkillsCard from "../models/SkillsCard";
+
+const skillsData = [
+  { icon: <FaReact size={44} color="#61DAFB" />, label: "React Js/Ts" },
+  { icon: <RiVuejsFill size={44} color="#42B883" />, label: "Vue Js" },
+  { icon: <SiNodedotjs size={44} color="#339933" />, label: "Node Js" },
+  { icon: <FaHtml5 size={44} color="orange" />, label: "HTML5" },
+  { icon: <FaCss3Alt size={44} color="blue" />, label: "CSS3" },
+  { icon: <IoLogoJavascript size={44} color="gold" />, label: "JavaScript" },
+  { icon: <FaPython size={44} color="blue" />, label: "Python" },
+  { icon: <SiMysql size={44} color="#00758F" />, label: "MySQL" },
+  { icon: <FaGitSquare size={44} color="#F1502F" />, label: "Git" },
+  { icon: <FaGithub size={44} color="black" />, label: "GitHub" },
+  {
+    icon: <RiTailwindCssFill size={44} color="#38B2AC" />,
+    label: "Tailwind CSS",
+  },
+  { icon: <FaBootstrap size={44} color="purple" />, label: "Bootstrap" },
+];
 
 const Skills = () => {
-  const [htmlWidth, setHtmlWidth] = useState(0);
-  const [cssWidth, setCssWidth] = useState(0);
-  const [jsWidth, setJsWidth] = useState(0);
-  const [tailwindWidth, setTailwindWidth] = useState(0);
-  const [reactWidth, setReactWidth] = useState(0);
-  const [sqlWidth, setSqlWidth] = useState(0);
-  const [pythonWidth, setPythonWidth] = useState(0);
-
-  useEffect(() => {
-    // Trigger the animation on first load by updating the width after a slight delay
-    if (top > 0) {
-    }
-    setTimeout(() => {
-      setHtmlWidth(90);
-      setCssWidth(85);
-      setJsWidth(90);
-      setTailwindWidth(80);
-      setReactWidth(70);
-      setPythonWidth(30);
-      setSqlWidth(85);
-    }, 300); // Slight delay for animation trigger
-  }, []);
-
   return (
-    <div className="px-24 text-center p-10 bg-gray-400">
-      <h1 className="text-4xl mb-12 font-bold">My Skills</h1>
-
-      {/* HTML/CSS Progress Bar */}
-      <div className="mb-6">
-        <h3 className="text-xl mb-2">HTML/CSS</h3>
-        <div className="relative w-full h-8 bg-gray-300 rounded-full">
-          <div
-            className="absolute top-0 left-0 h-full bg-orange-600 rounded-full transition-all duration-3000 ease-in-out"
-            style={{ width: `${htmlWidth}%` }}
-          >
-            <span className="absolute w-full text-center text-white font-bold top-0 left-0 flex items-center justify-center h-full">{`${htmlWidth}%`}</span>
-          </div>
-        </div>
-      </div>
-
-      {/* JavaScript Progress Bar */}
-      <div className="mb-6">
-        <h3 className="text-xl mb-2">JavaScript</h3>
-        <div className="relative w-full h-8 bg-gray-300 rounded-full">
-          <div
-            className="absolute top-0 left-0 h-full bg-blue-600 rounded-full transition-all duration-3000 ease-in-out"
-            style={{ width: `${cssWidth}%` }}
-          >
-            <span className="absolute w-full text-center text-white font-bold top-0 left-0 flex items-center justify-center h-full">{`${cssWidth}%`}</span>
-          </div>
-        </div>
-      </div>
-
-      {/* Tailwind Progress Bar */}
-      <div className="mb-6">
-        <h3 className="text-xl mb-2">Tailwind Css</h3>
-        <div className="relative w-full h-8 bg-gray-300 rounded-full">
-          <div
-            className="absolute top-0 left-0 h-full bg-yellow-500 rounded-full transition-all duration-3000 ease-in-out"
-            style={{ width: `${jsWidth}%` }}
-          >
-            <span className="absolute w-full text-center text-white font-bold top-0 left-0 flex items-center justify-center h-full">{`${jsWidth}%`}</span>
-          </div>
-        </div>
-      </div>
-
-      {/* SQL Progress Bar */}
-      <div className="mb-6">
-        <h3 className="text-xl mb-2">SQL</h3>
-        <div className="relative w-full h-8 bg-gray-300 rounded-full">
-          <div
-            className="absolute top-0 left-0 h-full bg-orange-700 rounded-full transition-all duration-3000 ease-in-out"
-            style={{ width: `${sqlWidth}%` }}
-          >
-            <span className="absolute w-full text-center text-white font-bold top-0 left-0 flex items-center justify-center h-full">{`${sqlWidth}%`}</span>
-          </div>
-        </div>
-      </div>
-
-      {/* React JS Progress Bar */}
-      <div className="mb-6">
-        <h3 className="text-xl mb-2">React JS</h3>
-        <div className="relative w-full h-8 bg-gray-300 rounded-full">
-          <div
-            className="absolute top-0 left-0 h-full bg-cyan-400 rounded-full transition-all duration-3000 ease-in-out"
-            style={{ width: `${tailwindWidth}%` }}
-          >
-            <span className="absolute w-full text-center text-white font-bold top-0 left-0 flex items-center justify-center h-full">{`${tailwindWidth}%`}</span>
-          </div>
-        </div>
-      </div>
-
-      {/* React Js Progress Bar */}
-      <div className="mb-6">
-        <h3 className="text-xl mb-2">Python</h3>
-        <div className="relative w-full h-8 bg-gray-300 rounded-full">
-          <div
-            className="absolute top-0 left-0 h-full bg-teal-400 rounded-full transition-all duration-3000 ease-in-out"
-            style={{ width: `${pythonWidth}%` }}
-          >
-            <span className="absolute w-full text-center text-white font-bold top-0 left-0 flex items-center justify-center h-full">{`${pythonWidth}%`}</span>
-          </div>
-        </div>
+    <div className="px-6 md:px-24 py-10 bg-primary text-center">
+      <h1 className="text-4xl mb-12 font-bold text-light">My Skills</h1>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        {skillsData.map((skill, index) => (
+          <SkillsCard
+            key={index}
+            icon={skill.icon}
+            label={skill.label}
+            className="text-xl"
+          />
+        ))}
       </div>
     </div>
   );

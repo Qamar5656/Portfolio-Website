@@ -30,7 +30,7 @@ const ContactForm = ({ onClose }) => {
             <AiOutlineClose
               onClick={onClose}
               size={28}
-              className="cursor-pointer"
+              className="cursor-pointer text-black"
             />
           </p>
         </div>
