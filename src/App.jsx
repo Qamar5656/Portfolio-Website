@@ -9,7 +9,7 @@ import Footer from "./components/Homepage/Footer";
 import Resume from "./components/Homepage/Resume";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "/App.css";
+import "./App.css";
 import ScrollProgressBar from "./components/models/ScrollProgressBar";
 import Loader from "./components/models/Loader";
 
