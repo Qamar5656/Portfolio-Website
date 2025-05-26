@@ -1,7 +1,8 @@
 import React from "react";
 import ProjectCard from "/src/components/models/ProjectsCard";
-import image from "/src/assets/images/diabet_ss.png";
+import diabeatimage from "/src/assets/images/diabet_ss.png";
 import aboutimg from "/src/assets/images/aboutimg.jpg";
+import gaming_ss from "/src/assets/images/gaming_ss.png";
 
 const Projects = ({ img, title, description }) => {
   return (
@@ -11,16 +12,14 @@ const Projects = ({ img, title, description }) => {
       </div>
       <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 max-w-3/4">
         <ProjectCard
-          img={
-            "https://api.microlink.io?url=https://gamaeweb.netlify.app&screenshot=true&embed=screenshot.url"
-          }
+          img={gaming_ss}
           title="Gaming Website"
           description="This is the text part of the project"
           deploy_link="https://gamaeweb.netlify.app"
           github_link="https://github.com/Qamar5656/Fortnite-Gaming"
         />
         <ProjectCard
-          img={image}
+          img={diabeatimage}
           title="Dietry Planner"
           description="This is the text part of the project"
           deploy_link="https://qamarfyp.netlify.app/"
@@ -36,7 +35,7 @@ const Projects = ({ img, title, description }) => {
           github_link="https://github.com/Qamar5656/Fortnite-Gaming"
         />
         <ProjectCard
-          img={image}
+          img={diabeatimage}
           title="Dietry Planner"
           description="This is the text part of the project"
           deploy_link="https://qamarfyp.netlify.app/"
