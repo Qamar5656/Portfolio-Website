@@ -22,15 +22,15 @@ const ContactForm = ({ onClose }) => {
     console.log("submit button clicked", values);
   };
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center pt-20 z-20">
-      <div className="bg-white p-4 border rounded-xl px-14 mt-5">
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center pt-12 z-20">
+      <div className="bg-primary p-4 border rounded-xl px-14 mt-5">
         <div className="flex justify-between">
-          <h1 className="font-bold text-2xl py-3">Contact Us Now</h1>
+          <h1 className="font-bold text-2xl py-3 text-light">Contact Us Now</h1>
           <p className="py-3">
             <AiOutlineClose
               onClick={onClose}
               size={28}
-              className="cursor-pointer text-black"
+              className="cursor-pointer text-light"
             />
           </p>
         </div>
@@ -41,58 +41,58 @@ const ContactForm = ({ onClose }) => {
             onSubmit={handleSubmit}
           >
             <Form>
-              <p className="flex justify-end text-red-400 py-2">
+              <p className="flex justify-end text-danger py-2">
                 Note: Fields with (*) sign are required fields{" "}
               </p>
               <div className="flex flex-col py-2">
-                <label htmlFor="name" className="flex pb-2">
-                  Name (<AstericSign />) :
+                <label htmlFor="name" className="flex pb-2 text-light">
+                  Name ( <AstericSign /> ) :
                 </label>
                 <Field
                   name="name"
                   type="text"
-                  className="border p-2 rounded-lg"
+                  className="border p-2 rounded-lg bg-primary text-light"
                 />
                 <ErrorMessage
                   name="name"
                   component="div"
-                  className="text-red-500 py-2"
+                  className="text-danger py-2"
                 />
               </div>
-              <div className="flex flex-col py-3">
-                <label htmlFor="email" className="flex pb-2">
-                  Email (<AstericSign />) :
+              <div className="flex flex-col py-2">
+                <label htmlFor="email" className="flex pb-2 text-light">
+                  Email ( <AstericSign /> ) :
                 </label>
                 <Field
                   name="email"
                   type="email"
-                  className="border p-2 rounded-lg"
+                  className="border p-2 rounded-lg bg-primary text-light"
                 />
                 <ErrorMessage
                   name="email"
                   component="div"
-                  className="text-red-500 py-2"
+                  className="text-danger py-2"
                 />
               </div>
-              <div className="flex flex-col py-3">
-                <label htmlFor="message" className="pb-2">
+              <div className="flex flex-col py-2">
+                <label htmlFor="message" className="pb-2 text-light">
                   Message:
                 </label>
                 <Field
                   name="message"
                   as="textarea"
-                  className="border p-2 rounded-lg"
+                  className="border p-2 rounded-lg bg-primary text-light"
                 />
                 <ErrorMessage
                   name="message"
                   component="div"
-                  className="text-red-500"
+                  className="text-danger py-2"
                 />
               </div>
               <div className="flex justify-center items-center py-2">
                 <button
                   type="submit"
-                  className="border bg-blue-600 text-white hover:bg-blue-700 font-bold rounded-lg p-2"
+                  className="border bg-blue-600 text-white hover:bg-blue-700 font-bold rounded-lg p-2 w-full"
                 >
                   Submit Now
                 </button>
