@@ -1,5 +1,7 @@
 import React from "react";
 import ProjectCard from "/src/components/models/ProjectsCard";
+import image from "/src/assets/images/diabet_ss.png";
+import aboutimg from "/src/assets/images/aboutimg.jpg";
 
 const Projects = ({ img, title, description }) => {
   return (
@@ -17,24 +19,42 @@ const Projects = ({ img, title, description }) => {
           deploy_link="https://gamaeweb.netlify.app"
           github_link="https://github.com/Qamar5656/Fortnite-Gaming"
         />
-        <a href="https://qamarfyp.netlify.app/" target="_blank">
-          <ProjectCard
-            img={
-              "https://api.microlink.io?url=https://qamarfyp.netlify.app/&screenshot=true&embed=screenshot.url"
-            }
-            title="Dietry Planner"
-            description="This is the text part of the project"
-          />
-        </a>
         <ProjectCard
-          img={img}
-          title="This is the heading of the card"
+          img={image}
+          title="Dietry Planner"
           description="This is the text part of the project"
+          deploy_link="https://qamarfyp.netlify.app/"
+          github_link="https://github.com/Qamar5656https://github.com/Qamar5656/FYP-Project-Diabeat-Using-React-JS"
         />
         <ProjectCard
-          img={img}
+          img={
+            "https://api.microlink.io?url=https://gamaeweb.netlify.app&screenshot=true&embed=screenshot.url"
+          }
+          title="Gaming Website"
+          description="This is the text part of the project"
+          deploy_link="https://gamaeweb.netlify.app"
+          github_link="https://github.com/Qamar5656/Fortnite-Gaming"
+        />
+        <ProjectCard
+          img={image}
+          title="Dietry Planner"
+          description="This is the text part of the project"
+          deploy_link="https://qamarfyp.netlify.app/"
+          github_link="https://github.com/Qamar5656/FYP-Project-Diabeat-Using-React-JS"
+        />
+        <ProjectCard
+          img={aboutimg}
           title="This is the heading of the card"
           description="This is the text part of the project"
+          deploy_link="https://app.netlify.com/teams/qamar5656/projects"
+          github_link="https://github.com/Qamar5656"
+        />
+        <ProjectCard
+          img={aboutimg}
+          title="This is the heading of the card"
+          description="This is the text part of the project"
+          deploy_link="https://app.netlify.com/teams/qamar5656/projects"
+          github_link="https://github.com/Qamar5656"
         />
       </div>
     </div>

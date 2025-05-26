@@ -52,6 +52,9 @@ body {
   .text-dark {
     @apply text-black;
   }
+  .text-danger {
+    @apply text-red-500;
+  }
 
   /* === Buttons === */
   .btn-primary {
