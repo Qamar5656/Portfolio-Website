@@ -11,7 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./App.css";
 import ScrollProgressBar from "./components/models/ScrollProgressBar";
-import Loader from "./components/models/Loader"; // 👈 import your loader
+import Loader from "./components/models/Loader";
 
 const HomePage = () => (
   <>
@@ -46,7 +46,7 @@ const App = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  if (loading) return <Loader />; // 👈 render the loader while loading
+  if (loading) return <Loader />;
 
   return (
     <>
