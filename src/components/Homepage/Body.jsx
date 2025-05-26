@@ -60,10 +60,10 @@ const Body = () => {
 
   return (
     <div
-      className="min-h-screen pt-14 w-full bg-black bg-opacity-70 bg-cover flex justify-between gap-9 items-center overflow-x-hidden px-32"
+      className="min-h-screen pt-12 w-full bg-black bg-opacity-70 bg-cover flex justify-between gap-9 items-center overflow-x-hidden px-32"
       style={{ backgroundImage: `url(${images[index]})` }}
     >
-      <div className="flex flex-col md:flex-row w-full items-center px-4 gap-24 justify-between py-6">
+      <div className="flex flex-col md:flex-row w-full items-center px-4 gap-24 justify-between">
         {/* Text Section */}
         <div className=" text-white flex flex-col justify-start gap-4 text-center lg:text-left md:mt-9 lg:mt-0">
           <h1 className="text-4xl">Hello, It's me</h1>
