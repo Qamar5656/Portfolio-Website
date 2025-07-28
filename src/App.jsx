@@ -12,6 +12,7 @@ import "aos/dist/aos.css";
 import "./App.css";
 import ScrollProgressBar from "./components/models/ScrollProgressBar";
 import Loader from "./components/models/Loader";
+import { ToastContainer } from "react-toastify";
 
 const HomePage = () => (
   <>
@@ -31,10 +32,26 @@ const HomePage = () => (
     <div id="footer">
       <Footer />
     </div>
+
+    {/* Toast Container to show toasts */}
+    <ToastContainer
+      position="top-right"
+      autoClose={2000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+      theme="light"
+      className="custom-toast-container"
+    />
   </>
 );
 
 const App = () => {
+  // const notify = () => toast("This is a toast notification!");
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

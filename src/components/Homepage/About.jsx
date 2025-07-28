@@ -18,9 +18,9 @@ const About = () => {
         </p>
 
         <p className="text-justify lg:text-left">
-          I'm a passionate web developer and designer with 6 months of practical
-          experience. My strengths lie in front-end development and working with
-          databases, and I am currently expanding into back-end technologies.
+          I'm a passionate web developer and designer with practical experience.
+          My strengths lie in front-end development and working with databases,
+          and I am currently expanding into back-end technologies.
         </p>
 
         <p className="text-justify lg:text-left">

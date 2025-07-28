@@ -78,3 +78,7 @@ body {
 .text-highlight {
   @apply text-yellow-400;
 }
+
+.custom-toast-container {
+  height: 90px; /* or any height you want */
+}
