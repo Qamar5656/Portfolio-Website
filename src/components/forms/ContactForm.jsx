@@ -51,7 +51,7 @@ const ContactForm = ({ onClose }) => {
                 <Field
                   name="name"
                   type="text"
-                  className="border p-2 rounded-lg bg-primary text-light"
+                  className="border p-2 rounded-lg bg-primary text-light focus:outline-blue-600"
                 />
                 <ErrorMessage
                   name="name"
@@ -66,7 +66,7 @@ const ContactForm = ({ onClose }) => {
                 <Field
                   name="email"
                   type="email"
-                  className="border p-2 rounded-lg bg-primary text-light"
+                  className="border p-2 rounded-lg bg-primary text-light focus:outline-blue-600"
                 />
                 <ErrorMessage
                   name="email"
