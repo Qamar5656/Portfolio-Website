@@ -35,11 +35,13 @@ const ContactForm = ({ onClose }) => {
           </p>
         </div>
         <div>
+          {/* formik tag for formik form validation */}
           <Formik
             initialValues={initialValue}
             validationSchema={validateSchema}
             onSubmit={handleSubmit}
           >
+            {/* Main Form input elements  */}
             <Form>
               <p className="flex justify-end text-danger py-2">
                 Note: Fields with (*) sign are required fields{" "}
