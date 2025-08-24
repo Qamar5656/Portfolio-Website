@@ -38,7 +38,7 @@ The project demonstrates concepts such as API integration, routing, responsivene
         <ProjectCard
           img={diabeatimage}
           title="Dietry Planner"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ipsam culpa! Hic, provident. Fugit excepturi veritatis nobis ut velit, consequatur laborum? Accusantium ducimus ullam eligendi voluptatem incidunt suscipit voluptatibus. Doloribus."
+          description="Lorem ipsum dolor sit This is the test data amet consectetur adipisicing elit. Aliquam, ipsam culpa! Hic, provident. Fugit excepturi veritatis nobis ut velit, consequatur laborum? Accusantium ducimus ullam eligendi voluptatem incidunt suscipit voluptatibus. Doloribus."
           deploy_link="https://qamarfyp.netlify.app/"
           github_link="https://github.com/Qamar5656/FYP-Project-Diabeat-Using-React-JS"
         />
