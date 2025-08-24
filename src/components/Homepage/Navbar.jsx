@@ -149,6 +149,7 @@ const Navbar = () => {
               menu ? "translate-x-0" : "-translate-x-full"
             } lg:hidden z-10 flex flex-col absolute bg-primary shadow-lg border-b text-light left-0 top-16 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
           >
+            {/* nav items from array */}
             {NavItems.map((section, index) => {
               const label = section.charAt(0).toUpperCase() + section.slice(1);
 
@@ -206,7 +207,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
+      {/* conditional rendering of the contact form  */}
       {formvisible && <ContactForm onClose={closeFormDisplay} />}
     </>
   );
