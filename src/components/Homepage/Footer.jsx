@@ -54,9 +54,19 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={item.label}
-            className={`text-xl transition-colors duration-300 ${item.hoverClass}`}
+            className="group relative flex flex-col items-center"
           >
-            {item.icon}
+            {/* Label that appears on hover */}
+            <span className="absolute -top-10 text-xs bg-black p-2 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              {item.label}
+            </span>
+
+            {/* Icon */}
+            <span
+              className={`text-xl transition-colors duration-300 ${item.hoverClass}`}
+            >
+              {item.icon}
+            </span>
           </a>
         ))}
       </div>
