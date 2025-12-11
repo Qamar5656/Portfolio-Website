@@ -1,5 +1,6 @@
 import React from "react";
 
+// function calling
 const AstericSign = () => {
   return (
     // main div to load the text
