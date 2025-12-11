@@ -15,6 +15,7 @@ import Loader from "./components/models/Loader";
 
 const HomePage = () => (
   <>
+    {/* progress bar tag  */}
     <ScrollProgressBar />
     <div id="home">
       <Body />
