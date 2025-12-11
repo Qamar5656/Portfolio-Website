@@ -85,9 +85,19 @@ const Body = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={item.label}
-                className={`text-white text-[38px] transition-colors duration-300 ${item.hoverClass}`}
+                className="group relative flex flex-col items-center"
               >
-                {item.icon}
+                {/* Label shown on hover */}
+                <span className="absolute -top-6 text-sm text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  {item.label}
+                </span>
+
+                {/* Icon */}
+                <span
+                  className={`text-[38px] text-white transition-colors duration-300 ${item.hoverClass}`}
+                >
+                  {item.icon}
+                </span>
               </a>
             ))}
           </div>

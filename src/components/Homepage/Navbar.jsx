@@ -128,7 +128,7 @@ const Navbar = () => {
           <div>
             <button
               onClick={handleFormDisplay}
-              className="btn-primary hidden lg:flex"
+              className="btn-primary hidden lg:flex rounded-xl text-lg"
             >
               Contact Us
             </button>
