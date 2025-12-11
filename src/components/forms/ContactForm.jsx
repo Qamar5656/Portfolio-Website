@@ -35,7 +35,7 @@ const ContactForm = ({ onClose }) => {
           </p>
         </div>
         <div>
-          {/* formik tag for formik form validation */}
+          {/* formik tag for formik form validation and  */}
           <Formik
             initialValues={initialValue}
             validationSchema={validateSchema}
